@@ -1,4 +1,4 @@
-package Aula03;
+package Aula02;
 public class testaAlunos {
     public static void main(String[] args) {
         aluno_c referencia = new aluno_c();
