@@ -1,6 +1,7 @@
 package Aula08.Exercicio02;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class canil {
@@ -128,6 +129,22 @@ public class canil {
             }
         }
         System.out.println("Numeros TOTAL DE PREMIAÇÕES"+p);
+    }
+    public int opc()
+    {
+        String opc;
+        int rps = 0;
+        do {
+            opc = tc.next();
+            if (!opc.matches("^[0-9]*$"))
+            {
+                System.out.println("Somente Numero!");
+            }
+            else
+            break;
+        }while(rps ==0);
+        rps = Integer.parseInt(opc);
+        return rps;
     }
 }
 
